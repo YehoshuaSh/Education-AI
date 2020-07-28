@@ -1,0 +1,23 @@
+{
+  "name": "education-ai",
+  "version": "1.0.0",
+  "description": "IBM contest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YehoshuaSh/Education-AI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YehoshuaSh/Education-AI/issues"
+  },
+  "homepage": "https://github.com/YehoshuaSh/Education-AI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}
