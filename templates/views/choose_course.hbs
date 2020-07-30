@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    {{>background}}
+</head>
+
+<body>
+        <div class="main-content">
+        {{>header}}
+        <h1>Choose a course from the list</h1>
+
+        <form>
+            <button>Try</button>
+        </form>
+
+        <a href="/choose_lecture" class="btn btn-fill">Linear algebra</a>
+        <div class="clearfix visible-xxs"></div>
+        <a href="/choose_lecture" class="btn btn-fill">Infinitesimal calculus</a>
+        <div class="clearfix visible-xxs"></div>
+        <a href="/choose_lecture" class="btn btn-fill">Laboratory</a>
+        <div class="clearfix visible-xxs"></div>
+        <a href="/choose_lecture" class="btn btn-fill">Computer science Introduction</a>
+    </div>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+
+</html>

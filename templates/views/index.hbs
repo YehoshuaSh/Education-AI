@@ -4,45 +4,21 @@
 
 <head>
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/app.js"></script>
     {{>background}}
 </head>
 
 <body>
-
-    {{!-- <h1>Choose the course from the list above:</h1>
-
-    <a href="/help" class="btn btn-fill">Linear algebra</a>
-    <div class="clearfix visible-xxs"></div>
-    <a href="#portfolio" class="btn btn-fill">Infinitesimal calculus</a>
-    <div class="clearfix visible-xxs"></div>
-    <a href="#portfolio" class="btn btn-fill">Laboratory</a>
-    <div class="clearfix visible-xxs"></div>
-    <a href="#portfolio" class="btn btn-fill">Computer science Introduction</a> --}}
         <div class="main-content">
         {{>header}}
-        <h1>Choose a course from the list</h1>
+        <h1>Hi! This is the place to see the progress of your student!</h1>
+        <p>Want to see the statistics? press the button below</p>
 
-        <a href="/course" class="btn btn-fill">Linear algebra</a>
-        <div class="clearfix visible-xxs"></div>
-        <a href="/course" class="btn btn-fill">Infinitesimal calculus</a>
-        <div class="clearfix visible-xxs"></div>
-        <a href="/course" class="btn btn-fill">Laboratory</a>
-        <div class="clearfix visible-xxs"></div>
-        <a href="/course" class="btn btn-fill">Computer science Introduction</a>
-
-        {{!-- <form>
-            <input placeholder="Location">
-            <button>Search</button>
-            
-        </form> --}}
-{{!-- 
-        <p id="message-1"></p>
-        <p id="message-2"></p> --}}
-        
-
+        <form>
+            <a href="/choose_course" class="btn btn-fill">Click here to view the courses</a>
+        </form>
     </div>
     {{>footer}}
+
 </body>
 
 

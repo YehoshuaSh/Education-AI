@@ -37,8 +37,15 @@ app.get('/help', (req, res) => {
     })
 })
 
-app.get('/course', (req, res) => {
-    res.render('course', {
+app.get('/choose_course', (req, res) => {
+    res.render('choose_course', {
+        title: 'Welcome!',
+        name: 'Avshalom Tam'
+    })
+})
+
+app.get('/choose_lecture', (req, res) => {
+    res.render('choose_lecture', {
         title: 'Course page',
         name: 'Avshalom Tam'
     })
