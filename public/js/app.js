@@ -1,6 +1,6 @@
 console.log('client side js')
 
-const tryButtonForm = document.querySelector('form')
+const showResultsForm = document.querySelector('form')
 
 tryButtonForm.addEventListener('submit', (e) => {
     e.preventDefault()

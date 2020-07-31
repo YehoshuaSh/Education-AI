@@ -3,6 +3,9 @@ const express = require('express')
 const hbs = require('hbs')
 const app = express()
 const port = process.env.PORT || 3001
+
+const stat = require('./utils/db_req')
+
 // Define paths for Express configuration
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -37,6 +40,9 @@ app.get('/help', (req, res) => {
     })
 })
 
+var course = ""
+var lecture = ""
+
 app.get('/choose_course', (req, res) => {
     res.render('choose_course', {
         title: 'Welcome!',
@@ -45,15 +51,27 @@ app.get('/choose_course', (req, res) => {
 })
 
 app.get('/choose_lecture', (req, res) => {
+    // save the course name
+    course = req.query.course
+
     res.render('choose_lecture', {
         title: 'Course page',
         name: 'Avshalom Tam'
     })
 })
-// /statistics-all
+
 app.get('/statistics-all', (req, res) => {
+    // save the lecture number
+    lecture = req.query.lect
+
+    // make the db search here
+    const db_response = stat(course, lecture)
+
     res.render('statistics-all', {
         title: 'Statistics-all page',
+        course,
+        lecture,
+        percent: db_response,
         name: 'Avshalom Tam'
     })
 })
