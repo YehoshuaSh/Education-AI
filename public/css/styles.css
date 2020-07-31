@@ -48,6 +48,14 @@ body {
     color: brown;
     flex-grow: 1;
 }
+.main-content p1 {
+    font-size: 24px;
+    margin-top: 22px;
+    color: black;
+    flex-grow: 1;
+    font-weight: bold;
+
+}
 
 footer {
     color: #888888;
